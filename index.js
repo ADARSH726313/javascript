@@ -1,24 +1,24 @@
-//   factory function
+//   constuctor  function
 
-function adu (l,b){
+function Adu (r,w) {
+    this.name = "adarsh ";
+    this.age = 23;
+    this.runs= r;
+    this.wicket = w ;
 
-    return obj = {
+    this.draw = function() {
 
-        name :"adu",
-        age :"22",
-        len:l,
-        bre :b,
-        draw: function(){
-
-            console.log("hare krishna")
-        }
+        console.log("hii how are u ?")
     };
-
 }
- const adi = adu(2,3) ;
 
- adi.color ='BLACK'
+const adi =  new Adu(10000,598) ;
 
- delete adi.color ;
+adi.captian = "yes";
 
- console.log(adi);
+delete adi.captian;
+
+console.log(adi);
+
+
+
