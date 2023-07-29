@@ -1,18 +1,26 @@
-//   ARRAY INSERTION 
+//   searching object in array 
 
- let adu = [1,2,3,"savitri","raju"]
+let array = [
+    {
+        no :1 ,
+        name : " prabhu shree ram"
+    },
 
-//  last mai ek chi add karni hai 
+    {
 
-adu.push("abhi")
+        no :2,
+        name :"pavan suuth hanuman ki jay "
+    }
+]
 
-//  start mai kuch add karni hai mujhe 
-
-adu.unshift("start");
+// console.log(array);
 
 
-//  bech mai kuch add karni hai 
+let job = array.find((item)=>{
 
-adu.splice(1,0,"a","b","c")
+    item.no = 1 ;
+})
 
-console.log(adu)
+console.log(job)
+
+
